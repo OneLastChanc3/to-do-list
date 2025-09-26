@@ -23,7 +23,7 @@ function ListaDeTareas() {
     const completarTarea = id => {
         const tareasActualizadas = tareas.map(tarea => {
             if(tarea.id === id) {
-                tarea.compleada = !tarea.compleada;
+                tarea.completada = !tarea.completada;
             }
             return tarea;
         });
@@ -34,7 +34,7 @@ function ListaDeTareas() {
      return (
         <div>
             <TareaFormulario onSubmit= {agregarTarea}></TareaFormulario>
-            <div className='tarea-contenedor'>
+            <div className='tareas-lista-contenedor'>
                 {
                     tareas.map(tarea  => 
                     <Tarea

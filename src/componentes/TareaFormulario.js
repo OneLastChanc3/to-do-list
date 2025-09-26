@@ -17,6 +17,7 @@ function TareaFormulario(props) {
         }
     
         props.onSubmit(tareaNueva);
+        setInput('')
     }
     return(
         <form 
@@ -27,6 +28,7 @@ function TareaFormulario(props) {
                 type='text'
                 placeholder='Escribe tu tarea'
                 name='texto'
+                value={input}
                 onChange={ manejarCambio }
             ></input>
             <button 

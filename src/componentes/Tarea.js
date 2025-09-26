@@ -13,7 +13,7 @@ function Tarea({ id,texto,completada,completarTarea, eliminarTarea}) {
           </div>
         <div 
           className="tarea-contenedor-icono"
-          onClick={eliminarTarea(id)}
+          onClick={() => eliminarTarea(id)}
           >
           <AiOutlineCloseCircle className='tarea-icono' />
          </div>
